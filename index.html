@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+  <header class="hero">
+        <nav class="navbar">
+            <h3 class="logo">DevPortfólio</h3>
+            <button id="hamburger">☰</button>
+            <ul class="menu" id="menu">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#contato">contato</a></li>
+            </ul>
+        </nav>
+        <div class="hero-container">
+            <p class="intro">Olá, eu sou Gabriel Otavio Schmitt</p>
+            <h2>Desenvolvedor FrontEnd/BackEnd</h2>
+            <p class="descrição">Criando experiências digitais com códigos.</p>
+        </div>
+    </header>
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <div class="sobre-conteudo">
+            <div class="sobre-texto">
+            <p>Futuro Dev-FrontEnd e BackEnd,HTML,CSS,JS,SQL.</p>
+            <P>Em busca de novas oportunidades para atuar na área da Tecnologia.</P>
+            </div>
+        <div class="sobre-dados">
+            <div>
+                <strong>1+</strong>
+                <span>Projetos concluídos</span>
+            </div>
+            <div>
+                <strong>1+</strong>
+                <span>Anos de experiência em HTML CSS JS.</span>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="projetos">
+        <h2>Meus Projetos</h2>
+        <div class="projetos-container">
+            <div class="projeto-card">
+                <img src="C:\Users\gabri\OneDrive\Desktop\Meu Primeiro site\imagens\Sem título.png" alt="imagem do projeto" />
+                <h2>Projetos</h2>
+                <p>Idéias HTML.</p>
+                <a href="#">Ver projeto</a>
+            </div>
+            <div class="projeto-card">
+                <img src="C:\Users\gabri\OneDrive\Desktop\Meu Primeiro site\imagens\Sem título.png" alt="imagem do projeto" />
+                <h2>Projetos</h2>
+                <p>Idéias CSS.</p>
+                <a href="#">Ver projeto</a>
+            </div>
+            <div class="projeto-card">
+                <img src="C:\Users\gabri\OneDrive\Desktop\Meu Primeiro site\imagens\Sem título.png" alt="imagem do projeto" />
+                <h2>Projetos</h2>
+                <p>Idéias JavaScript.</p>
+                <a href="#">Ver projeto</a>
+            </div>
+        </div>
+    </section>
+    <section id="habilidades">
+        <h2>Habilidades técnicas</h2>
+        <p>Tecnologias que uso para desenvolver web.</p>
+        <div class="habilidades-lista">
+            <div class="habilidades-card">
+                <h3>HTML</h3>
+                <span>Iniciante</span>
+            </div>
+            <div class="habilidades-card">
+                <h3>CSS</h3>
+                <span>Iniciante</span>
+            </div>
+            <div class="habilidades-card">
+                <h3>JavaScript</h3>
+                <span>Iniciate</span>
+            </div>
+        </div>
+    </section>
+    <section id="contato">
+        <h2>Entre em contato</h2>
+        <p>Algum projeto em mente? Estou sempre pronto 
+            para novas oportunidades!
+        </p>
+        <div class="contatos-lista">
+            <div class="contato-item">
+                <strong>Email</strong>
+            <span>Gabrieloschmitt@gmail.com</span>
+            </div>
+            <div class="contato-item">
+                <strong>Telefone</strong>
+            <span>55(47)99242-1774</span>
+            </div>
+            <div class="contato-item">
+                <strong>Localização</strong>
+            <span>Blumeau - SC</span>
+            </div>
+        </div>
+
+        <div class="redes-sociais">
+                <a href="https://github.com/GabrielOtavioSchmitt">GitHub</a>
+                <a href="https://www.instagram.com/gbzcs2/">Instagram</a>
+                <a href="https://br.linkedin.com/in/gabriel-ot%C3%A1vio-schmitt-8781703b0">LinkedIn</a>
+            </div>
+    </section>
+    <footer class="footer">
+        <p>© 2026 DevPortifólio</p>
+    </footer>
+    <script>
+        let button = document.getElementById("hamburger");
+        const menu = document.getElementById("menu");
+
+        button.addEventListener("click", function () {
+            menu.classList.toggle("ativa");
+        })
+    </script>
+    </body>
+</html>
